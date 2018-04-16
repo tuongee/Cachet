@@ -18,23 +18,24 @@ return [
     'incidents' => [
         'title'                    => 'Incydenty i Konserwacja',
         'incidents'                => 'Vorfälle',
-        'logged'                   => '{0} Es gibt keine Vorfälle, gute Arbeit.|Du hast einen Vorfall gemeldet.|Du hast <strong>:count</strong> Vorfälle gemeldet.',
+        'logged'                   => '{0}Brak incydentów, dobra robota.|[1]Masz jeden incydent.|[2,4]Masz <strong>:count</strong> incydenty.|[5,*]Masz <strong>:count</strong> incydentów.',
         'incident-create-template' => 'Vorlage erstellen',
         'incident-templates'       => 'Vorfall Vorlagen',
         'updates'                  => [
             'title'   => 'Aktualizacje incydentu dla :incident',
-            'count'   => '{0} Zero Aktualizacji|[1] Jedna Aktualizacja|[2] Dwie Aktualizacje|[3,*] Kilka Aktualizacji',
+            'count'   => '{0}Zero Aktualizacji|[1] Jedna Aktualizacja|[2]Dwie Aktualizacje|[3,*]Kilka Aktualizacji',
             'add'     => [
                 'title'   => 'Utwórz nową aktualizację zdarzenia',
-                'success' => 'Your new incident update has been created.',
+                'success' => 'Twoja aktualizacja o nowym zdarzeniu została utworzona.',
                 'failure' => 'Coś poszło nie tak z aktualizacją incydentu.',
             ],
             'edit' => [
                 'title'   => 'Edytuj aktualizację incydentu',
                 'success' => 'Aktualizacja incydentu została zaktualizowana.',
-                'failure' => 'Something went wrong updating the incident update',
+                'failure' => 'Coś poszło nie tak z aktualizacją zdarzenia',
             ],
         ],
+        'reported_by'              => 'Zgłoszone przez :user',
         'add'                      => [
             'title'   => 'Vorfall hinzufügen',
             'success' => 'Dodano zdarzenie.',
@@ -73,8 +74,8 @@ return [
 
     // Incident Maintenance
     'schedule' => [
-        'schedule'     => 'Geplante Wartungen',
-        'logged'       => '{0} Nie ma żadnych harmonogramów, dobra robota.|Posiadasz jeden harmonogram.|Zgłoszono <strong>:count</strong> harmonogramów.',
+        'schedule'     => 'Konserwacja',
+        'logged'       => '{0}Brak konserwacji, dobra robota.|[1]Masz zaplanowaną jedną.|[2,*]Masz zaplanowane <strong>:count</strong>.',
         'scheduled_at' => 'Geplant am :timestamp',
         'add'          => [
             'title'   => 'Zaplanuj prace konserwatorskie',

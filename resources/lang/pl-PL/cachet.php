@@ -30,10 +30,10 @@ return [
         'none'         => 'Brak zgłoszonych incydentów',
         'past'         => 'Vergangene Vorfälle',
         'stickied'     => 'Przyklejone zdarzenia',
-        'scheduled'    => 'Geplante Wartungen',
+        'scheduled'    => 'Konserwacja',
         'scheduled_at' => ', geplant :timestamp',
         'posted'       => 'Opublikowano :timestamp',
-        'posted_at'    => 'Posted at :timestamp',
+        'posted_at'    => 'Opublikowano :timestamp',
         'status'       => [
             1 => 'Untersuchungen laufen',
             2 => 'Identifiziert',
@@ -53,9 +53,9 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1] System działa poprawnie|[2,Inf] Wszystkie systemy działają poprawnie',
-        'bad'   => '[0,1] W systemie obecnie występują problemy|[2,Inf] W niektórych systemach występują problemy',
-        'major' => '[0,1] System jest poważnie przeciążony|[2,Inf] Niektóre systemy są poważnie przeciążone',
+        'good'  => '[0,1]System działa poprawnie|[2,*]Wszystkie systemy działają poprawnie',
+        'bad'   => '[0,1] W systemie występują problemy|[2,Inf] W niektórych systemach występują problemy',
+        'major' => '[0,1] W systemie występują poważne problemy|[2,Inf] W niektórych systemach występują poważne problemy',
     ],
 
     'api' => [
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'Jesteś obecnie zapisany na wszystkie aktualizacje.',
             'my_subscriptions' => 'Jesteś obecnie zapisany na poniższe aktualizacje.',
+            'manage_at_link'   => 'Zarządzaj swoją subskrypcją na :link',
         ],
         'email' => [
             'subscribe'          => 'Aktualisierungen per E-Mail abonnieren.',
@@ -117,9 +118,18 @@ return [
         ],
     ],
 
+    // Meta descriptions
+    'meta' => [
+        'description' => [
+            'incident'  => 'Szczegóły i aktualizacje dotyczące zdarzenia :name, które wystąpiło :date',
+            'schedule'  => 'Szczegóły dotyczące zaplanowanej przerwy technicznej :name rozpoczynającej się :startDate',
+            'subscribe' => 'Zapisz się do :app, aby otrzymywać informacje i aktualizacje dotyczące zdarzeń i przerw technicznych',
+            'overview'  => 'Bądź na bieżąco z aktualizacjami z :app.',
+        ],
+    ],
+
     // Other
     'home'            => 'Strona Główna',
-    'description'     => 'Bądź na bieżąco z aktualizacjami z :app.',
     'powered_by'      => 'Obsługiwany przez <a href="https://cachethq.io" class="links">Cachet</a>.',
     'timezone'        => 'Czas według strefy :timezone.',
     'about_this_site' => 'Über diese Seite',

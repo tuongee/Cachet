@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1] Система працює|[2,Inf] Всі системи працюють',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1] Система має проблеми | [2, Inf] Деякі системи мають проблеми',
         'major' => '[0,1] Система має значні проблеми |[2,Inf] Декілька систем мають значні проблеми',
     ],
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'Наразі, ви підписані на всі оновлення.',
             'my_subscriptions' => 'Ви уже підписані до цих оновлень.',
+            'manage_at_link'   => 'Manage your subscriptions at :link',
         ],
         'email' => [
             'subscribe'          => 'Підписатись на email оновлення.',
@@ -117,9 +118,18 @@ return [
         ],
     ],
 
+    // Meta descriptions
+    'meta' => [
+        'description' => [
+            'incident'  => 'Details and updates about the :name incident that occurred on :date',
+            'schedule'  => 'Details about the scheduled maintenance period :name starting :startDate',
+            'subscribe' => 'Subscribe to :app in order to receive updates of incidents and scheduled maintenance periods',
+            'overview'  => 'Залишатись в курсі останніх оновлень стану :app.',
+        ],
+    ],
+
     // Other
     'home'            => 'Домашня сторінка',
-    'description'     => 'Залишатись в курсі останніх оновлень стану :app.',
     'powered_by'      => 'Розроблено <a href="https://cachethq.io" class="links">Cachet</a>.',
     'timezone'        => 'Часовий пояс :timezone.',
     'about_this_site' => 'Про сайт',

@@ -45,7 +45,7 @@ return [
     // Schedule
     'schedules' => [
         'status' => [
-            0 => 'Upcoming',
+            0 => 'Kommende',
             1 => 'Pågår',
             2 => 'Fullført',
         ],
@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1] Systemet er operativt| [2, Inf] Alle systemer er operative',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1] Systemet har problemer| [2, Inf] Noen systemer har problemer',
         'major' => '[0,1] Det er et større brudd i systemet| [2, Inf] Noen systemer har større brudd',
     ],
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'Du abonnerer for øyeblikket på alle oppdateringer.',
             'my_subscriptions' => 'Du abonnerer for øyeblikket på følgende oppdateringer.',
+            'manage_at_link'   => 'Manage your subscriptions at :link',
         ],
         'email' => [
             'subscribe'          => 'Abonner for å motta varslinger på e-post.',
@@ -117,9 +118,18 @@ return [
         ],
     ],
 
+    // Meta descriptions
+    'meta' => [
+        'description' => [
+            'incident'  => 'Details and updates about the :name incident that occurred on :date',
+            'schedule'  => 'Details about the scheduled maintenance period :name starting :startDate',
+            'subscribe' => 'Subscribe to :app in order to receive updates of incidents and scheduled maintenance periods',
+            'overview'  => 'Hold deg oppdatert med de nyeste service-oppdateringene fra :app.',
+        ],
+    ],
+
     // Other
     'home'            => 'Forsiden',
-    'description'     => 'Hold deg oppdatert med de nyeste service-oppdateringene fra :app.',
     'powered_by'      => 'Drevet av <a href="https://cachethq.io" class="links"> Cachet</a>.',
     'timezone'        => 'Tider vises i :timezone.',
     'about_this_site' => 'Om denne siden',

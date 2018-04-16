@@ -18,23 +18,24 @@ return [
     'incidents' => [
         'title'                    => 'Segnalazioni &amp; Pianificazione',
         'incidents'                => 'Incidenti',
-        'logged'                   => '{0} Non ci sono segnalazioni, ottimo lavoro.|Hai notificato una segnalazione.|Hai notificato <strong>:count</strong> segnalazioni.',
+        'logged'                   => '{0}There are no incidents, good work.|[1]You have logged one incident.|[2,*]You have reported <strong>:count</strong> incidents.',
         'incident-create-template' => 'Crea Modello',
         'incident-templates'       => 'Modelli di segnalazione',
         'updates'                  => [
             'title'   => 'Incident updates for :incident',
-            'count'   => '{0} Zero Updates|[1] One Update|[2] Two Updates|[3,*] Several Updates',
+            'count'   => '{0}Zero Updates|[1]One Update|[2]Two Updates|[3,*]Several Updates',
             'add'     => [
                 'title'   => 'Crea nuovo aggiornamento incidente',
                 'success' => 'Your new incident update has been created.',
-                'failure' => 'Something went wrong with the incident update.',
+                'failure' => 'Qualcosa è andato storto nell\'aggiornamento dell\'incidente.',
             ],
             'edit' => [
-                'title'   => 'Edit incident update',
-                'success' => 'The incident update has been updated.',
+                'title'   => 'Modifica aggiornamento incidente',
+                'success' => 'L\'aggiornamento dell\'incidente è stato aggiornato.',
                 'failure' => 'Something went wrong updating the incident update',
             ],
         ],
+        'reported_by'              => 'Reported by :user',
         'add'                      => [
             'title'   => 'Riporta un problema',
             'success' => 'Segnalazione aggiunta.',
@@ -74,7 +75,7 @@ return [
     // Incident Maintenance
     'schedule' => [
         'schedule'     => 'Manutenzione programmata',
-        'logged'       => '{0} non ci sono pianificazioni, buon lavoro. | Hai annotato una pianificazione. | Hai riportato <strong>:count</strong> pianificazioni.',
+        'logged'       => '{0}There has been no Maintenance, good work.|[1]You have logged one schedule.|[2,*]You have reported <strong>:count</strong> schedules.',
         'scheduled_at' => 'Pianificato alle :timestamp',
         'add'          => [
             'title'   => 'Aggiungi manutenzione programmata',
@@ -157,12 +158,12 @@ return [
     'subscribers' => [
         'subscribers'          => 'Iscritti',
         'description'          => 'Gli iscritti riceveranno aggiornamenti via email quando vengono create le segnalazioni o vengono aggiornati i componenti vengono.',
-        'description_disabled' => 'To use this feature, you need allow people to signup for notifications.',
+        'description_disabled' => 'Per utilizzare questa funzionalità, è necessario consentire alle persone l\'iscrizione alle notifiche.',
         'verified'             => 'Verificato',
         'not_verified'         => 'Non Verificato',
         'subscriber'           => ': email, iscritta :date',
         'no_subscriptions'     => 'Iscritto a tutti gli aggiornamenti',
-        'global'               => 'Globally subscribed',
+        'global'               => 'Iscritto a livello globale',
         'add'                  => [
             'title'   => 'Aggiungi un nuovo iscritto',
             'success' => 'L\'iscritto è stato aggiunto!',

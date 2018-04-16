@@ -33,7 +33,7 @@ return [
         'scheduled'    => 'Manutenzione programmata',
         'scheduled_at' => ', programmata il :timestamp',
         'posted'       => 'Pubblicato :timestamp',
-        'posted_at'    => 'Posted at :timestamp',
+        'posted_at'    => 'Pubblicato alle :timestamp',
         'status'       => [
             1 => 'Analisi',
             2 => 'Identificato',
@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1] Sistema operativo|[2,Inf] Tutti i sistemi sono operativi',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1] Il sistema al momento presenta problemi|[2,Inf] Alcuni sistemi presentano problemi',
         'major' => '[0,1] Il servizio presenta presenta un grave problema|[2,Inf] Alcuni sistemi presentano un grave problema',
     ],
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'Sei attualmente iscritto a tutti gli aggiornamenti.',
             'my_subscriptions' => 'Sei attualmente iscritto ai seguenti suggerimenti.',
+            'manage_at_link'   => 'Manage your subscriptions at :link',
         ],
         'email' => [
             'subscribe'          => 'Iscriviti agli aggiornamenti via email.',
@@ -117,9 +118,18 @@ return [
         ],
     ],
 
+    // Meta descriptions
+    'meta' => [
+        'description' => [
+            'incident'  => 'Details and updates about the :name incident that occurred on :date',
+            'schedule'  => 'Details about the scheduled maintenance period :name starting :startDate',
+            'subscribe' => 'Subscribe to :app in order to receive updates of incidents and scheduled maintenance periods',
+            'overview'  => 'Resta informato sugli ultimi aggiornamenti dei servizi di :app.',
+        ],
+    ],
+
     // Other
     'home'            => 'Home',
-    'description'     => 'Resta informato sugli ultimi aggiornamenti dei servizi di :app.',
     'powered_by'      => 'Powered by <a href="https://cachethq.io" class="links"> Cachet</a>.',
     'timezone'        => 'Le date sono mostrate in :timezone.',
     'about_this_site' => 'Informazioni sul sito',

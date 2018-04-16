@@ -18,23 +18,24 @@ return [
     'incidents' => [
         'title'                    => 'Olaylar &amp; Zamanlama',
         'incidents'                => 'Olaylar',
-        'logged'                   => '{0} Hiç olay yok, tebrikler. |Bir olay rapor ettiniz.|<strong>:count</strong> olay rapor ettiniz.',
+        'logged'                   => '{0}There are no incidents, good work.|[1]You have logged one incident.|[2,*]You have reported <strong>:count</strong> incidents.',
         'incident-create-template' => 'Şablon Oluştur',
         'incident-templates'       => 'Olay Şablonları',
         'updates'                  => [
-            'title'   => 'Incident updates for :incident',
-            'count'   => '{0} Zero Updates|[1] One Update|[2] Two Updates|[3,*] Several Updates',
+            'title'   => 'Olay güncellemeleri için: olay',
+            'count'   => '{0}Zero Updates|[1]One Update|[2]Two Updates|[3,*]Several Updates',
             'add'     => [
                 'title'   => 'Yeni olay güncellemesi oluştur',
-                'success' => 'Your new incident update has been created.',
-                'failure' => 'Something went wrong with the incident update.',
+                'success' => 'Yeni olay güncelleştirmeniz oluşturuldu.',
+                'failure' => 'Olay şablonu güncellenirken bir şeyler ters gitti.',
             ],
             'edit' => [
-                'title'   => 'Edit incident update',
-                'success' => 'The incident update has been updated.',
-                'failure' => 'Something went wrong updating the incident update',
+                'title'   => 'Olay güncelleştirmeyi düzenle',
+                'success' => 'Olay güncelleştirme güncelleştirildi.',
+                'failure' => 'Olay şablonu güncellenirken bir şeyler ters gitti',
             ],
         ],
+        'reported_by'              => 'Reported by :user',
         'add'                      => [
             'title'   => 'Olay Ekle',
             'success' => 'Olay eklendi.',
@@ -73,8 +74,8 @@ return [
 
     // Incident Maintenance
     'schedule' => [
-        'schedule'     => 'Zamanlanmış bakım',
-        'logged'       => '{0} Hiçbir olay yok, tebrikler. |Bir olayı raprladınız. | <strong>:count</strong> olayı raporladınız.',
+        'schedule'     => 'Bakım',
+        'logged'       => '{0}There has been no Maintenance, good work.|[1]You have logged one schedule.|[2,*]You have reported <strong>:count</strong> schedules.',
         'scheduled_at' => ':timestamp zamanı için kaydedildi',
         'add'          => [
             'title'   => 'Zamanlanmış Bakım Ekle',
@@ -157,12 +158,12 @@ return [
     'subscribers' => [
         'subscribers'          => 'Aboneler',
         'description'          => 'Aboneler, olaylar oluşturulduğunda veya bileşenler güncellendiğinde e-posta güncellemelerini alacaktır.',
-        'description_disabled' => 'To use this feature, you need allow people to signup for notifications.',
+        'description_disabled' => 'Bu özelliği kullanmak için, kullanıcıların bildirimlere kayıt olmasına izin vermelisiniz.',
         'verified'             => 'Onaylanmış',
         'not_verified'         => 'Doğrulanmadı',
         'subscriber'           => ':email, abone oldu :date',
         'no_subscriptions'     => 'Güncellemeler için abone ol',
-        'global'               => 'Globally subscribed',
+        'global'               => 'Genel olarak abone olundu',
         'add'                  => [
             'title'   => 'Yeni abone ekleme',
             'success' => 'Abone eklendi!',

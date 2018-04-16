@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1] Sistema en funcionament | [2, Inf] Tots els sistemes estan en funcionament',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1] Actualment el sistema està experimentant problemes| [2, Inf] Alguns sistemes estan experimentant problemes',
         'major' => '[0,1] El servei està experimentant una interrupció major| [2, Inf] Alguns sistemes estan experimentant una interrupció major',
     ],
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'Actualment estau subscrits a totes les actualitzacions.',
             'my_subscriptions' => 'Actualment estau subscrits a les següents actualitzacions.',
+            'manage_at_link'   => 'Manage your subscriptions at :link',
         ],
         'email' => [
             'subscribe'          => 'Subscriviu-vos a les actualitzacions del correu electrònic.',
@@ -117,9 +118,18 @@ return [
         ],
     ],
 
+    // Meta descriptions
+    'meta' => [
+        'description' => [
+            'incident'  => 'Details and updates about the :name incident that occurred on :date',
+            'schedule'  => 'Details about the scheduled maintenance period :name starting :startDate',
+            'subscribe' => 'Subscribe to :app in order to receive updates of incidents and scheduled maintenance periods',
+            'overview'  => 'Estigues informat de les últimes actualitzacions del servei de :app.',
+        ],
+    ],
+
     // Other
     'home'            => 'Inici',
-    'description'     => 'Estigues informat de les últimes actualitzacions del servei de :app.',
     'powered_by'      => 'Funciona amb <a href="https://cachethq.io" class="links">Cachet</a>.',
     'timezone'        => 'Les hores es mostren en :timezone.',
     'about_this_site' => 'Sobre aquest lloc',

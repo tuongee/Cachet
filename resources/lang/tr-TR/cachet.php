@@ -30,10 +30,10 @@ return [
         'none'         => 'Hiçbir olay raporlanmadı',
         'past'         => 'Geçmiş Olaylar',
         'stickied'     => 'Yapıştırılmış Olaylar',
-        'scheduled'    => 'Zamanlanmış bakım',
+        'scheduled'    => 'Bakım',
         'scheduled_at' => ',zamanlanmış :zamandilimi',
         'posted'       => ':timestamp gönderildi',
-        'posted_at'    => 'Posted at :timestamp',
+        'posted_at'    => 'Gönderim Zamanı :timestamp',
         'status'       => [
             1 => 'İnceleniyor',
             2 => 'Tanımlandı',
@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1] Sistem çalışır durumda| [2, Inf] Tüm sistemler çalışır durumda',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1] Sistemde şu anda sorunlar yaşanıyor [2, Inf] Bazı sistemlerde sorunlar yaşanıyor',
         'major' => '[0,1] Bu serviste büyük bir kesinti yaşıyoruz [2, Inf] Bazı sistemlerde büyük bir kesintisi yaşıyoruz',
     ],
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'Şu anda tüm güncellemeleri abone oldunuz.',
             'my_subscriptions' => 'Şu an aşağıdaki güncellemelere abone oldunuz.',
+            'manage_at_link'   => 'Manage your subscriptions at :link',
         ],
         'email' => [
             'subscribe'          => 'Güncellemeler için abone ol.',
@@ -117,9 +118,18 @@ return [
         ],
     ],
 
+    // Meta descriptions
+    'meta' => [
+        'description' => [
+            'incident'  => 'Details and updates about the :name incident that occurred on :date',
+            'schedule'  => 'Details about the scheduled maintenance period :name starting :startDate',
+            'subscribe' => 'Subscribe to :app in order to receive updates of incidents and scheduled maintenance periods',
+            'overview'  => 'Şu uygulamalardaki en son hizmet güncellemeleri ile güncel kalın.',
+        ],
+    ],
+
     // Other
     'home'            => 'Ana Sayfa',
-    'description'     => 'Şu uygulamalardaki en son hizmet güncellemeleri ile güncel kalın.',
     'powered_by'      => '<a href="https://cachethq.io" class="links"> Önbellek </a> kaynaklı.',
     'timezone'        => 'Saatler, saat diliminde gösterilir.',
     'about_this_site' => 'Bu Site hakkında',

@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1]Sistem operasional|[2,*] Semua sistem operasional',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1]Sistem ini sedang mengalami masalah|[2,*]Beberapa sistem mengalami masalah',
         'major' => '[0,1]Sistem mengalami masalah besar|[2,*]Beberapa sistem mengalami masalah besar',
     ],
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'Anda saat ini terdaftar untuk semua update.',
             'my_subscriptions' => 'Anda saat ini berlangganan update berikut.',
+            'manage_at_link'   => 'Manage your subscriptions at :link',
         ],
         'email' => [
             'subscribe'          => 'Langganan update email.',
@@ -117,9 +118,18 @@ return [
         ],
     ],
 
+    // Meta descriptions
+    'meta' => [
+        'description' => [
+            'incident'  => 'Rincian dan update tentang insiden :name yang terjadi pada :date',
+            'schedule'  => 'Rincian tentang jadwal pemeliharaan :name mulai :startDate',
+            'subscribe' => 'Berlangganan :app untuk menerima update insiden dan jadwal pemeliharaan',
+            'overview'  => 'Tetap up to date dengan layanan terbaru dari :app.',
+        ],
+    ],
+
     // Other
     'home'            => 'Depan',
-    'description'     => 'Tetap up to date dengan layanan terbaru dari :app.',
     'powered_by'      => 'Ditenagai oleh <a href="https://cachethq.io" class="links"> Cachet</a>.',
     'timezone'        => 'Waktu dalam :timezone.',
     'about_this_site' => 'Tentang situs ini',

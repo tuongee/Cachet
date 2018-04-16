@@ -16,25 +16,26 @@ return [
 
     // Incidents
     'incidents' => [
-        'title'                    => 'Hændelser &amp; Planlagte',
+        'title'                    => 'Hændelser og Vedligehold',
         'incidents'                => 'Incidents',
-        'logged'                   => '{0} Ingen åbne hændelser.|Der er en åben hændelse.|Der er <strong>:count</strong> åbne hændelser.',
+        'logged'                   => '{0}There are no incidents, good work.|[1]You have logged one incident.|[2,*]You have reported <strong>:count</strong> incidents.',
         'incident-create-template' => 'Create Template',
         'incident-templates'       => 'Incident Templates',
         'updates'                  => [
             'title'   => 'Hændelsesopdateringer til :hændelse',
-            'count'   => '{0} Nul opdateringer |[1] Én opdatering |[2] To opdateringer | [3, *] Flere opdateringer',
+            'count'   => '{0}Zero Updates|[1]One Update|[2]Two Updates|[3,*]Several Updates',
             'add'     => [
                 'title'   => 'Opret ny hændelsesopdatering',
-                'success' => 'Your new incident update has been created.',
-                'failure' => 'Something went wrong with the incident update.',
+                'success' => 'Din nye hændelsesopdatering er oprettet.',
+                'failure' => 'En fejl opstod med hændelsesopdateringen.',
             ],
             'edit' => [
-                'title'   => 'Edit incident update',
-                'success' => 'The incident update has been updated.',
-                'failure' => 'Something went wrong updating the incident update',
+                'title'   => 'Redigér hændelsesopdatering',
+                'success' => 'Hændelsesopdateringen er blevet opdateret.',
+                'failure' => 'En fejl opstod under opdateringen af hændelsesopdateringen',
             ],
         ],
+        'reported_by'              => 'Anmeldt af bruger',
         'add'                      => [
             'title'   => 'Opret hændelse',
             'success' => 'Hændelse tilføjet.',
@@ -74,7 +75,7 @@ return [
     // Incident Maintenance
     'schedule' => [
         'schedule'     => 'Vedligeholdelse',
-        'logged'       => '{0} Der er intet planlagt.|Der er 1 planlagt.|Der er <strong>:count</strong> planlagte.',
+        'logged'       => '{0}There has been no Maintenance, good work.|[1]You have logged one schedule.|[2,*]You have reported <strong>:count</strong> schedules.',
         'scheduled_at' => 'Planlagt til :timestamp',
         'add'          => [
             'title'   => 'Tilføj planlagt vedligeholdelse',
@@ -157,12 +158,12 @@ return [
     'subscribers' => [
         'subscribers'          => 'Subscribers',
         'description'          => 'Abonnenter vil modtage notifikationer når hændelser oprettes eller komponenter opdateres.',
-        'description_disabled' => 'To use this feature, you need allow people to signup for notifications.',
+        'description_disabled' => 'For at bruge denne funktion skal du tillader folk at tilmelde sig notifikationer.',
         'verified'             => 'Bekræftet',
         'not_verified'         => 'Ej bekræftet',
         'subscriber'           => ':email, abonnerede :date',
         'no_subscriptions'     => 'Abonnere på alle opdateringer',
-        'global'               => 'Globally subscribed',
+        'global'               => 'Globalt tilmeldt',
         'add'                  => [
             'title'   => 'Tilføj abonnent',
             'success' => 'Subscriber added.',

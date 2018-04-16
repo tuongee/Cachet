@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1]System operational|[2,*] All systems are operational',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1]The system is experiencing issues|[2,*]Some systems are experiencing issues',
         'major' => '[0,1]The system is experiencing major issues|[2,*]Some systems are experiencing major issues',
     ],
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'คุณติตตามทั้งหมดแล้ว',
             'my_subscriptions' => 'คุณติดตามข่าวสารเหล่านี้',
+            'manage_at_link'   => 'Manage your subscriptions at :link',
         ],
         'email' => [
             'subscribe'          => 'ติดตามข่าวสารทาง email',
@@ -117,9 +118,18 @@ return [
         ],
     ],
 
+    // Meta descriptions
+    'meta' => [
+        'description' => [
+            'incident'  => 'Details and updates about the :name incident that occurred on :date',
+            'schedule'  => 'Details about the scheduled maintenance period :name starting :startDate',
+            'subscribe' => 'Subscribe to :app in order to receive updates of incidents and scheduled maintenance periods',
+            'overview'  => 'ติดตามความเคลื่อนไหวล่าสุดของ :app',
+        ],
+    ],
+
     // Other
     'home'            => 'หน้าหลัก',
-    'description'     => 'ติดตามความเคลื่อนไหวล่าสุดของ :app',
     'powered_by'      => 'Powered by <a href="https://cachethq.io" class="links">Cachet</a>.',
     'timezone'        => 'โซนเวลา :timezone',
     'about_this_site' => 'เกี่ยวกับเว็บไซต์นี้',

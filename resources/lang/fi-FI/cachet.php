@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1] järjestelmät ovat toiminnassa| [2, Inf] Kaikki järjestelmät ovat toiminnassa',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1] järjestelmässä on tällä hetkellä ongelmia| [2, Inf] Joissakin järjestelmissä on ongelmia',
         'major' => '[0,1] Palvelussa on merkittävä katkos| [2, Inf] Joissakin järjestelmissä on merkittävä katkoksia',
     ],
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'Olet tällä hetkellä tilannut kaikki ilmoitukset.',
             'my_subscriptions' => 'Olet tällä hetkellä tilannut seuraavat ilmoitukset.',
+            'manage_at_link'   => 'Manage your subscriptions at :link',
         ],
         'email' => [
             'subscribe'          => 'Tilaa sähköpostiin päivitykset.',
@@ -117,9 +118,18 @@ return [
         ],
     ],
 
+    // Meta descriptions
+    'meta' => [
+        'description' => [
+            'incident'  => 'Details and updates about the :name incident that occurred on :date',
+            'schedule'  => 'Details about the scheduled maintenance period :name starting :startDate',
+            'subscribe' => 'Subscribe to :app in order to receive updates of incidents and scheduled maintenance periods',
+            'overview'  => 'Pysy ajan tasalla tilaamalla uusimmat päivitykset :app.',
+        ],
+    ],
+
     // Other
     'home'            => 'Etusivu',
-    'description'     => 'Pysy ajan tasalla tilaamalla uusimmat päivitykset :app.',
     'powered_by'      => 'Powered by <a href="https://cachethq.io" class="links"> Cachet</a>.',
     'timezone'        => 'Aika näytetään :timezone.',
     'about_this_site' => 'Tietoa sivustosta',
